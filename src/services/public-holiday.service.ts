@@ -68,7 +68,7 @@ export class PublicHolidayService {
     // check transaction
     await queryRunner.startTransaction();
     try {
-      await publicHolidayRepo.clear();
+      await publicHolidayRepo.delete({});
       await publicHolidayRepo.insert(listPublicHoliday);
       await queryRunner.commitTransaction();
     } catch (err) {

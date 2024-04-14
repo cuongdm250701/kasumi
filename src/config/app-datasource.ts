@@ -36,7 +36,7 @@ export const AppDataSource = new DataSource({
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   schema: process.env.DB_SCHEMA,
-  logging: config.hasLog ? true : ['error'],
+  logging: true,
   entities: entities,
   subscribers: [],
   migrations: migrations,
