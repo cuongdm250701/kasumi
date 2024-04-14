@@ -1,0 +1,63 @@
+{
+  "name": "kasumi-backend",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "src/app.ts",
+  "scripts": {
+    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
+    "migration:create": "typeorm migration:create",
+    "migration:run": "typeorm -d src/config/app-datasource.ts migration:run",
+    "migration:revert": "typeorm migration:revert",
+    "start": "nodemon --watch",
+    "dev": "webpack --watch",
+    "lint": "eslint **/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.vti.com.vn:usmh/kasumi_workschedule/backend.git"
+  },
+  "author": "NQL",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/koa": "^2.15.0",
+    "@types/koa-bodyparser": "^4.3.12",
+    "@types/koa__cors": "^5.0.0",
+    "@types/koa__router": "^12.0.4",
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
+    "typescript": "^5.4.4",
+    "typescript-eslint": "^7.6.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.0.0",
+    "@koa/cors": "^5.0.0",
+    "@koa/router": "^12.0.1",
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^2.4.3",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "dotenv": "^16.4.5",
+    "jsonwebtoken": "^9.0.2",
+    "koa": "^2.15.2",
+    "koa-body": "^6.0.1",
+    "koa-bodyparser": "^4.4.1",
+    "moment-timezone": "^0.5.45",
+    "nodemon-webpack-plugin": "^4.8.2",
+    "pg": "^8.11.5",
+    "pg-connection-string": "^2.6.4",
+    "typedi": "^0.10.0",
+    "typeorm": "^0.3.20",
+    "webpack": "^5.91.0",
+    "webpack-node-externals": "^3.0.0",
+    "winston": "^3.13.0"
+  }
+}
