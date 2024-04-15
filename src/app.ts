@@ -9,10 +9,11 @@ import { errorHandlerMiddleware } from '@middleware/error-handler.middleware';
 import { loggerMiddleware } from '@middleware/logger.middleware';
 import { config } from '@config/app';
 import { AppDataSource } from '@config/app-datasource';
+import { remarkRouter } from '@controllers/remark.controller';
 // import { Authorized } from '@middleware/auth.middleware';
 const port = 3000;
 
-const routers = [authRouter, publicHolidayRouter];
+const routers = [authRouter, publicHolidayRouter, remarkRouter];
 
 const app = new Koa<AppState, Context>();
 app.use(cors());
