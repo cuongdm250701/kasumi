@@ -2,6 +2,7 @@ import { TableEnum } from '@models/enum/table.enum';
 import { Column, Entity, OneToMany, PrimaryColumn } from 'typeorm';
 import { PublicHolidayEntity } from './public-holiday.entity';
 import { RemarkEntity } from './remark.entity';
+import { BusinessSetingEntity } from './business-setting.entity';
 
 @Entity({ name: TableEnum.STORE })
 export class StoreEntity {
@@ -25,4 +26,10 @@ export class StoreEntity {
 
   @OneToMany(() => RemarkEntity, (remarkEntity) => remarkEntity.storeCode)
   remarks: RemarkEntity[];
+
+  @OneToMany(
+    () => BusinessSetingEntity,
+    (businessSetingEntity) => businessSetingEntity.storeCode,
+  )
+  businessSetings: BusinessSetingEntity[];
 }

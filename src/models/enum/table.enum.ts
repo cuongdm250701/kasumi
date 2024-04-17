@@ -3,4 +3,5 @@ export enum TableEnum {
   USER = 'users',
   PUBLIC_HOLIDAY = 'public_holiday',
   REMARK = 'remark',
+  BUSINESS_SETTING = 'business_setting',
 }

@@ -1,4 +1,3 @@
-import { Type } from 'class-transformer';
 import { IsNotEmpty, IsArray } from 'class-validator';
 
 interface ItemPublicHoliday {
