@@ -22,3 +22,11 @@ export interface ItemBusinessSetting {
   rate: number;
   businessType: string;
 }
+
+export interface ItemTasks {
+  taskCode: string;
+  taskName: string;
+  minutes: number;
+  remark: string;
+  type: number;
+}

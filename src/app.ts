@@ -11,6 +11,7 @@ import { config } from '@config/app';
 import { AppDataSource } from '@config/app-datasource';
 import { remarkRouter } from '@controllers/remark.controller';
 import { businessSettingRouter } from '@controllers/business-setting.controller';
+import { tasksRouter } from '@controllers/tasks.controller';
 // import { Authorized } from '@middleware/auth.middleware';
 const port = 3000;
 
@@ -19,6 +20,7 @@ const routers = [
   publicHolidayRouter,
   remarkRouter,
   businessSettingRouter,
+  tasksRouter,
 ];
 
 const app = new Koa<AppState, Context>();

@@ -29,7 +29,11 @@ export class BusinessSetingEntity extends BaseEntity {
   @Column({ name: 'business_name' })
   businessName: string;
 
-  @ManyToOne(() => StoreEntity, (storeEntity) => storeEntity.publicHolidays, {})
+  @ManyToOne(
+    () => StoreEntity,
+    (storeEntity) => storeEntity.businessSettings,
+    {},
+  )
   @JoinColumn({ name: 'store_code' })
   @Column({ name: 'store_code' })
   storeCode: string;
